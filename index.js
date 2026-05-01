@@ -25,7 +25,7 @@ connectDB()
 app.use(express.json()) 
 
 app.use(cors({
-  origin: "https://hirex-backend-hlth.onrender.com",
+  origin:[ "https://hirex-backend-hlth.onrender.com","https://hire-x-frontend-96mr.vercel.app"],
   credentials: true
 }));
 app.use('/api',router)
